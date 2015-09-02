@@ -1,0 +1,92 @@
+/* RESET */
+body, ul, form {
+    padding: 0;
+    margin: 0;
+    font-family: "OpenSansLight", "Segoe UI", KievitPro-Light, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(252, 252, 252, 0.63);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    text-align: center;
+}
+
+div.overlay {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    z-index: 99;
+    background: grey;
+    opacity: 0.1;
+}
+
+div.overlay-curtain {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    z-index: 120;
+    background: url('../images/stripquilt2copy.jpg');
+}
+
+div.room {
+    border: none;
+    text-align: center;
+}
+
+div.roomimage {
+    height: 300px;
+}
+
+div.room img {
+    max-height: 80%;
+}
+
+.progress {
+    margin: 0 auto;
+    width: 200px;
+}
+
+#bedroom-thermometer > span {
+    color: #0e90d2;
+    display: block;
+    font-weight: bold;
+}
+
+ul.control-panel li {
+    width: 33%;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    background: #b270cd;
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    /* tablets */
+    ul.control-panel li {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* small devices, phones */
+    ul.control-panel li {
+        width: 100%;
+    }
+}
