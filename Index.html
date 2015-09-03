@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Home Automation</title>
+    <title>Home Automation Project</title>
     <link rel="stylesheet" href="libs/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="libs/css/bootstrap-switch.min.css" type="text/css" />
     <link rel="stylesheet" href="libs/css/slider.css" type="text/css" />
@@ -10,36 +10,54 @@
 </head>
 <body>
     <header>
-        <h1>Home Automation Test</h1>
+        <h1>Home Automation Project</h1>
     </header>
     <section class="container" id="home">
-        <div class="col-md-12 room">
-            <h2>Bed Room</h2>
-            <div id="light-simulate" class="overlay"></div>
-            <div id="curtain-simulate" class="overlay-curtain"></div>
-            <div class="roomimage">
-                <img alt="room image" src="images/bedroom.png" />
-                <div class="progress">
-                    <div id="thermometer-simulate" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="22"
-                         aria-valuemin="15" aria-valuemax="30" style="width:47%">22</div>
+        <div class="row">
+            <div class="col-md-12 room">
+                <h2>Bed Room</h2>
+                <div id="light-simulate" class="overlay"></div>
+                <div id="curtain-simulate" class="overlay-curtain"></div>
+                <div class="roomimage">
+                    <img alt="room image" src="images/bedroom.png" />
+                    <div class="progress">
+                        <div id="thermometer-simulate" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="22"
+                             aria-valuemin="15" aria-valuemax="30" style="width:47%">22</div>
+                    </div>
                 </div>
+                <ul id="bedroom-control" class="control-panel clear">
+                    <li id="bedroom-light">
+                        <h4>Light</h4>
+                        <input id="switch-offColor" type="checkbox" data-off-color="warning" name="switch" />
+                    </li>
+                    <li id="bedroom-thermometer">
+                        <h4>Temperature Controller</h4>
+                        <input id="thermometer-control" type="text" class="span2" value="" data-slider-min="15" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="true" />
+                        <span id="temperature-meter"></span>
+                    </li>
+                    <li id="bedroom-curtain">
+                        <h4>Curtain</h4>
+                        <input id="switch-offColor" type="checkbox" data-off-color="info" name="switch"/>
+                    </li>
+                    <!--Add more control button here. following the li structure as above-->
+                </ul>
             </div>
-            <ul id="bedroom-control" class="control-panel clear">
-                <li id="bedroom-light" class="light">
-                    <h4>Light</h4>
-                    <input id="switch-offColor" type="checkbox" data-off-color="warning" name="switch" />
-                </li>
-                <li id="bedroom-thermometer">
-                    <h4>Temperature Controller</h4>
-                    <input id="thermometer-control" type="text" class="span2" value="" data-slider-min="15" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="true" />
-                    <span id="temperature-meter"></span>
-                </li>
-                <li id="bedroom-curtain">
-                    <h4>Curtain</h4>
-                    <input id="switch-offColor" type="checkbox" data-off-color="info" name="switch" />
-                </li>
-            </ul>
         </div>
+        <!--Add new rooms here for extension. e.g., living room; Depending on layout, modify class name e.g., col-md-6; In general, follow the example below-->
+        <!--<div class="row">
+            <div class="col-md-12 room">
+                <div class="roomimage">
+                    <img alt="room image" src="images/bedroom.png"/>
+                    <div class="progress">
+                        <div id="thermometer-simulate" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="22"
+                             aria-valuemin="15" aria-valuemax="30" style="width: 47%">22</div>
+                    </div>
+                </div>
+                <ul class="control-panel clear">
+                    <li></li>
+                </ul>
+            </div>
+        </div>-->
     </section>
     <footer><h6>Author: Tingting Zhu</h6></footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
