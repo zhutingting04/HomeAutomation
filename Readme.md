@@ -36,3 +36,7 @@ The following frameworks/libraries are adopted (in addition to jQuery):
 * Lastest Firefox
 * Latest Chrome
 * IE 11
+
+## Declariation
+
+I have not copied any codes apart from css reset (which is referenced). Though I was inspired from a few home automation solutions on Github and a course on Plural sight: http://www.pluralsight.com/courses/home-automation-fundamentals.
